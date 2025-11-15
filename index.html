@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Arya Apps</title>
+
+    
+    <link rel="stylesheet" href="css\styles.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body style="background-color: gray;">
+
+    
+    <header>
+        <h1 class="text-2xl font-bold pb-10">To-do List Apps</h1>
+    </header>
+   
+    <main>
+        
+        <section class="form-section">
+            <form>
+               
+                <input type="text" class="border rounded p-2" id="todo-input" placeholder="Enter a new todo item">
+
+               
+                <input type="date" class="border rounded p-2" id="todo-date" placeholder="Enter due date">
+            </form>
+
+            
+            <button type="button" onclick="addTodo();" class="border rounded p-2 bg-green-500 text-white">Add
+                Todo</button>
+        </section>
+
+       
+        <section class="flex pt-2 justify-between">
+            
+            <button class="border rounded p-2 bg-blue-500 text-white">Filter Todos</button>
+
+            
+            <button class="border rounded p-2 bg-red-500 text-white">Clear All Todos</button>
+        </section>
+
+        
+        <section class="pt-2">
+            <header>
+                <h1 class="text-2xl font-semibold">List of Todos</h1>
+            </header>
+
+            <ul class="pt-2" id="todo-list">
+                
+                <li>No todos available</li>
+            </ul>
+        </section>
+    </main>
+
+    
+    <footer class="pt-5">
+        <p>&copy; 2025 Todo List Arya Apps</p>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
